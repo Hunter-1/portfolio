@@ -1,0 +1,9 @@
+body {
+    margin: 20px;
+}
+img {
+    max-width: 200px;
+}
+.sidebar {
+    grid-area: sidebar;
+}
