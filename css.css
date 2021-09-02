@@ -1,9 +1,47 @@
+*{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
 body {
     margin: 20px;
+    background: #282D28;
+    align-content: center;
+}
+div {
+    align-content: center;
+}
+h1,h2,p,li {
+    color: white;
 }
 img {
     max-width: 200px;
 }
 .sidebar {
     grid-area: sidebar;
+}
+li {
+    list-style-type: none;
+}
+.topnav, .footer {
+    background-color: #6C5593;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a,.topnav b,.footer th, .footer td {
+    float: left;
+    color: #DCD0EA;
+    text-align: center;
+    padding: 14px;
+    font-size: 20px;
+}
+.footer th {
+    width: 100px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #4B2360;
+    color: #AD9CB7;
 }

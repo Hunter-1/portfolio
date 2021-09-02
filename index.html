@@ -13,25 +13,50 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-<div class="sidebar">
+<div class="topnav">
+    <b>Hunter Wilson</b>
+    <a href="#full_profile">Profile</a>
+    <a href="#projects">Projects</a>
+</div>
+<div id="full_profile">
     <div id="profile">
+        <div id="profile_title">
+            <h1>Profile</h1>
+        </div>
         <div id="profile_image">
             <img src="images/pic.png" alt="portrait of Hunter Wilson">
         </div>
         <div id="full_name">
-            <h1>Hunter Wilson</h1>
+            <h2>Hunter Wilson</h2>
         </div>
     </div>
-    <div id="contact_info">
-        <div id="email">
-            <span>Email:</span>
-            <span>hunterinswitzerland@gmail.com</span>
-        </div>
-        <div id="github">
-            <span>Github:</span>
-            <span>github.com/hunter-1</span>
-        </div>
-    </div>
+</div>
+<div id="projects">
+    <h1>Project History</h1>
+    <ul>
+        <li>
+            <div class="project_info">
+                <p class="project_year">2016</p>
+                <p class="project_title">Duality Video Game</p>
+                <p class="project_languages">Game Maker Language</p>
+            </div>
+            <img src="images/duality.png" alt="Screenshot of Duality Platformer">
+            <p class="project_description">Platformer where you control
+                two player characters at the same time.</p>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <table>
+        <tr>
+            <th>Email:</th>
+            <td>hunterinswitzerland@gmail.com</td>
+        </tr>
+        <tr>
+            <th>Github:</th>
+            <td>github.com/hunter-1</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
