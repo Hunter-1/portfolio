@@ -3,18 +3,18 @@
     text-decoration: none;
 }
 body {
-    margin: 20px;
     background: #282D28;
     align-content: center;
+    margin:0;
+}
+#all {
+    margin: 5%;
 }
 div {
     align-content: center;
 }
-h1,h2,p,li {
+h1,h2,p,li,td {
     color: white;
-}
-img {
-    max-width: 200px;
 }
 .sidebar {
     grid-area: sidebar;
@@ -22,12 +22,23 @@ img {
 li {
     list-style-type: none;
 }
+
+.screenshot {
+    max-width: 50%;
+}
+
 .topnav, .footer {
     background-color: #6C5593;
     overflow: hidden;
+    width: 100%;
 }
 
-/* Style the links inside the navigation bar */
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #4B2360;
+    color: #AD9CB7;
+}
+
 .topnav a,.topnav b,.footer th, .footer td {
     float: left;
     color: #DCD0EA;
@@ -35,13 +46,39 @@ li {
     padding: 14px;
     font-size: 20px;
 }
-.footer th {
-    width: 100px;
+
+ @media screen and (max-width: 600px){
+     .screenshot {
+         max-width: 100%;
+     }
+     #profile_image {
+         width: 60%;
+     }
+     h1, h2, #profile_image_div {
+         text-align: center;
+     }
+ }
+
+@media screen and (max-width: 359px){
+    .topnav a, .topnav b{
+        font-size: 16px;
+    }
 }
 
+@media screen and (min-width: 600px){
+    /* Style the links inside the navigation bar */
+    .footer th {
+        width: 100px;
+    }
+    #profile{
+        text-align: center;
+        width: 300px;
+    }
+    #profile{
+        display: block;
+    }
+    .screenshot{
+        max-width:550px;
+    }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #4B2360;
-    color: #AD9CB7;
 }
