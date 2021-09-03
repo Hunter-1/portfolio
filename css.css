@@ -23,6 +23,11 @@ li {
     list-style-type: none;
 }
 
+.download {
+    color: #6C5593;
+    text-decoration: underline;
+}
+
 .screenshot {
     max-width: 50%;
 }
